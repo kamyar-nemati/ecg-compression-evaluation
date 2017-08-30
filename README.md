@@ -21,6 +21,10 @@ At this point, the original signal, reconstructed signal, and the overlapping of
 ![Plot](https://user-images.githubusercontent.com/29518086/29881025-fd03467a-8ddb-11e7-8b6c-04dc91ef68c2.PNG "Plot")
 
 ### Plot (Zoom)
-The plot window can zoom in to provide better view on signals. ZoomIn: <kbd> + </kbd> ZoomOut: <kbd> - </kbd>
+The plot window can zoom in to provide better view on signals.
+
+ZoomIn: <kbd> + </kbd>
+
+ZoomOut: <kbd> - </kbd>
 
 ![plot-window-zoom-screenshot](https://user-images.githubusercontent.com/29518086/29881061-161c3324-8ddc-11e7-8027-373fd7ef2f4c.png)
