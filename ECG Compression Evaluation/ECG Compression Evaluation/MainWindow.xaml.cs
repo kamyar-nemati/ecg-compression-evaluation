@@ -24,8 +24,8 @@ namespace ECG_Compression_Evaluation
         private OpenFileDialog ofd;
         private List<int> original_samples;
         private List<int> reconstructed_samples;
-        private libecgclrinterface.EncodeWrapper EncoderObject;
-        private libecgclrinterface.DecodeWrapper DecoderObject;
+        private libecgclrinterface.EncoderWrapper EncoderObject;
+        private libecgclrinterface.DecoderWrapper DecoderObject;
 
         public MainWindow()
         {
@@ -67,10 +67,10 @@ namespace ECG_Compression_Evaluation
             bool eStat = false, dStat = false;
             float cr, prd, qs;
 
-            //Instantiate Encode class.
-            this.EncoderObject = new libecgclrinterface.EncodeWrapper(dataset_length, dataset_path, threshold, aperture, ref eStat);
+            //Instantiate Encoder class.
+            this.EncoderObject = new libecgclrinterface.EncoderWrapper(dataset_length, dataset_path, threshold, aperture, ref eStat);
             
-            if (eStat) //Encode Instantiation successful.
+            if (eStat) //Encoder Instantiation successful.
             {
                 //Get original samples.
                 this.original_samples.Clear();
@@ -92,10 +92,10 @@ namespace ECG_Compression_Evaluation
                     cr = this.EncoderObject._getBinarySequeneCompressionRatio();
                     this.textbox_cr.Text = cr.ToString();
 
-                    //Instantiate Decode class.
-                    this.DecoderObject = new libecgclrinterface.DecodeWrapper(compressed_sequence, ref dStat);
+                    //Instantiate Decoder class.
+                    this.DecoderObject = new libecgclrinterface.DecoderWrapper(compressed_sequence, ref dStat);
 
-                    if (dStat) //Decode Instantiation successful.
+                    if (dStat) //Decoder Instantiation successful.
                     {
                         //Perform decode operation.
                         if (this.DecoderObject._decode())
