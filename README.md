@@ -2,7 +2,7 @@
 A Graphical User Interface (GUI) application to evaluate ECG signal data compression performance and measure signal distortion.
 
 ## Repo Description
-The application is written under Windows Presentation Foundation (WPF) subsystem and it uses Windows Forms as well. This is meant to be a convenient tool to accurately examine and demonstrate the performace of the proposed hybrid ECG data compression technique in repo _libecg_ for scientific research purposes.
+The application is written under Windows Presentation Foundation (WPF) subsystem to provide the main UI window and it uses Windows Forms to draw line charts. This is meant to be a convenient tool to accurately examine and demonstrate the performace of the proposed hybrid ECG data compression technique in repo _libecg_ for scientific research purposes.
 
 ## Dependency
 This application depends: __libecg_clr_interface__
