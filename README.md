@@ -5,7 +5,7 @@ A Graphical User Interface (GUI) application to evaluate ECG signal data compres
 The application is written under Windows Presentation Foundation (WPF) subsystem to provide the main UI window and it uses Windows Forms to draw line charts. This is meant to be a convenient tool to accurately examine and demonstrate the performace of the proposed hybrid ECG data compression technique in repo _libecg_ for scientific research purposes.
 
 ## Dependency
-This application depends: __libecg_clr_interface__ [https://github.com/kamyar-nemati/libecg-clr-interface](Here)
+This application depends: __libecg_clr_interface__ [](Here) <https://github.com/kamyar-nemati/libecg-clr-interface>
 
 The core compression library is __libecg__ which is written in native C++ 14. Therefore, in order to utilize unmanaged code in DotNET framework, a wrapper is necessary. The _libecg_clr_interface_ is the wrapper.
 
