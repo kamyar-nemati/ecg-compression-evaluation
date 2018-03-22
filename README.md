@@ -9,6 +9,8 @@ This application depends: __libecg_clr_interface__ [Here](https://github.com/kam
 
 The core compression library is __libecg__ which is written in native C++ 14. Therefore, in order to utilize unmanaged code in DotNET framework, a wrapper is necessary. The _libecg_clr_interface_ is the wrapper.
 
+Navigate to you project's root directory and run `git submodule update --init --recursive` in order to get all dependency projects.
+
 ## Screenshots
 ### Main window
 The ECG signal dataset file is selected. Threshold and aperture values are set. The dataset is compressed and then decompressed.
