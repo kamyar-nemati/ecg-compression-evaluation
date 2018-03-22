@@ -103,12 +103,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\libecg-clr-interface\libecg-clr-interface\libecg-clr-interface\libecg-clr-interface.vcxproj">
-      <Project>{568ed538-f03d-4cbd-97e4-6c2d8e0bc83e}</Project>
-      <Name>libecg-clr-interface</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Resources\ECGs\samples100.txt" />
     <Resource Include="Resources\ECGs\samples100_long.txt" />
     <Resource Include="Resources\ECGs\samples101.txt" />
@@ -175,6 +169,12 @@
     <Resource Include="Resources\ECGs\samples210_long.txt" />
     <Resource Include="Resources\ECGs\samples212.txt" />
     <Resource Include="Resources\ECGs\samples212_long.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\libecg-clr-interface\libecg-clr-interface\libecg-clr-interface\libecg-clr-interface.vcxproj">
+      <Project>{568ed538-f03d-4cbd-97e4-6c2d8e0bc83e}</Project>
+      <Name>libecg-clr-interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
